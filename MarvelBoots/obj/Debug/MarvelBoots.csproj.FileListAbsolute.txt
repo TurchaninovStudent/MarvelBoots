@@ -1,0 +1,76 @@
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\bin\Debug\MarvelBoots.exe.config
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\bin\Debug\MarvelBoots.exe
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\bin\Debug\MarvelBoots.pdb
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\bin\Debug\EntityFramework.dll
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\bin\Debug\MSTest.TestFramework.dll
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\bin\Debug\MSTest.TestFramework.Extensions.dll
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\bin\Debug\EntityFramework.xml
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\bin\Debug\MSTest.TestFramework.xml
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\bin\Debug\MSTest.TestFramework.Extensions.xml
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\bin\Debug\cs\MSTest.TestFramework.resources.dll
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\bin\Debug\de\MSTest.TestFramework.resources.dll
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\bin\Debug\es\MSTest.TestFramework.resources.dll
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\bin\Debug\fr\MSTest.TestFramework.resources.dll
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\bin\Debug\it\MSTest.TestFramework.resources.dll
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\bin\Debug\ja\MSTest.TestFramework.resources.dll
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\bin\Debug\ko\MSTest.TestFramework.resources.dll
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\bin\Debug\pl\MSTest.TestFramework.resources.dll
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\bin\Debug\pt-BR\MSTest.TestFramework.resources.dll
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\bin\Debug\ru\MSTest.TestFramework.resources.dll
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\bin\Debug\tr\MSTest.TestFramework.resources.dll
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\bin\Debug\zh-Hans\MSTest.TestFramework.resources.dll
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\bin\Debug\zh-Hant\MSTest.TestFramework.resources.dll
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\obj\Debug\MarvelBoots.csproj.AssemblyReference.cache
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\obj\Debug\MarvelBoots.Properties.Resources.resources
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\obj\Debug\MarvelBoots.csproj.GenerateResource.cache
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\obj\Debug\MarvelBoots.csproj.CoreCompileInputs.cache
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\obj\Debug\MarvelBo.2D7B3E9A.Up2Date
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\obj\Debug\MarvelBoots.exe
+C:\Users\grablevskiy\Documents\MarvelBoots\MarvelBoots\WindowsFormsApp\obj\Debug\MarvelBoots.pdb
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\bin\Debug\MarvelBoots.exe.config
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\bin\Debug\MarvelBoots.exe
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\bin\Debug\MarvelBoots.pdb
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\bin\Debug\EntityFramework.dll
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\bin\Debug\EntityFramework.SqlServer.dll
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\bin\Debug\MSTest.TestFramework.dll
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\bin\Debug\MSTest.TestFramework.Extensions.dll
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\bin\Debug\System.Threading.Tasks.Extensions.dll
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\bin\Debug\EntityFramework.xml
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\bin\Debug\EntityFramework.SqlServer.xml
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\bin\Debug\MSTest.TestFramework.xml
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\bin\Debug\MSTest.TestFramework.Extensions.xml
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\bin\Debug\System.Threading.Tasks.Extensions.xml
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\bin\Debug\cs\MSTest.TestFramework.resources.dll
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\bin\Debug\de\MSTest.TestFramework.resources.dll
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\bin\Debug\es\MSTest.TestFramework.resources.dll
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\bin\Debug\fr\MSTest.TestFramework.resources.dll
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\bin\Debug\it\MSTest.TestFramework.resources.dll
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\bin\Debug\ja\MSTest.TestFramework.resources.dll
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\bin\Debug\ko\MSTest.TestFramework.resources.dll
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\bin\Debug\pl\MSTest.TestFramework.resources.dll
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\bin\Debug\pt-BR\MSTest.TestFramework.resources.dll
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\bin\Debug\ru\MSTest.TestFramework.resources.dll
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\bin\Debug\tr\MSTest.TestFramework.resources.dll
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\bin\Debug\zh-Hans\MSTest.TestFramework.resources.dll
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\bin\Debug\zh-Hant\MSTest.TestFramework.resources.dll
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\obj\Debug\MarvelBoots.csproj.AssemblyReference.cache
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\obj\Debug\MarvelBoots.AppForms.BaseForm.resources
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\obj\Debug\MarvelBoots.Properties.Resources.resources
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\obj\Debug\MarvelBoots.csproj.GenerateResource.cache
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\obj\Debug\MarvelBoots.csproj.CoreCompileInputs.cache
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\obj\Debug\MarvelBo.2D7B3E9A.Up2Date
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\obj\Debug\MarvelBoots.exe
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\obj\Debug\MarvelBoots.pdb
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\obj\Debug\MarvelBoots.AppForms.LoginForm.resources
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\bin\Debug\ru\EntityFramework.resources.dll
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\obj\Debug\MarvelBoots.AppForms.ProductForm.resources
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\obj\Debug\MarvelBoots.CustomControls.ProductCard.resources
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\obj\Debug\MarvelBoots.AppForms.OrdersForm.resources
