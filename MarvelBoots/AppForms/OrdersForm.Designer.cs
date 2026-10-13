@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrdersForm));
-            this.labelFullName = new System.Windows.Forms.Label();
-            this.buttonCartAccent = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).BeginInit();
             this.splitContainer.Panel1.SuspendLayout();
@@ -61,27 +59,6 @@
             this.splitContainer.Panel2.Controls.Add(this.flowLayoutPanel1);
             this.splitContainer.Panel2.Padding = new System.Windows.Forms.Padding(20, 0, 20, 20);
             // 
-            // labelFullName
-            // 
-            this.labelFullName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelFullName.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelFullName.Location = new System.Drawing.Point(540, 9);
-            this.labelFullName.Name = "labelFullName";
-            this.labelFullName.Size = new System.Drawing.Size(219, 34);
-            this.labelFullName.TabIndex = 4;
-            this.labelFullName.Text = "FullName";
-            this.labelFullName.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // buttonCartAccent
-            // 
-            this.buttonCartAccent.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonCartAccent.BackgroundImage")));
-            this.buttonCartAccent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonCartAccent.Location = new System.Drawing.Point(719, 41);
-            this.buttonCartAccent.Name = "buttonCartAccent";
-            this.buttonCartAccent.Size = new System.Drawing.Size(45, 45);
-            this.buttonCartAccent.TabIndex = 5;
-            this.buttonCartAccent.UseVisualStyleBackColor = true;
-            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
@@ -108,8 +85,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label labelFullName;
-        private System.Windows.Forms.Button buttonCartAccent;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

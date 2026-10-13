@@ -78,11 +78,23 @@
     <Compile Include="AppForms\BaseForm.Designer.cs">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AppForms\OrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppForms\OrderForm.Designer.cs">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AppForms\OrdersForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AppForms\OrdersForm.Designer.cs">
       <DependentUpon>OrdersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppForms\DetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppForms\DetailsForm.Designer.cs">
+      <DependentUpon>DetailsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="AppForms\ProductsForm.cs">
       <SubType>Form</SubType>
@@ -97,6 +109,18 @@
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Constants\AppColors.cs" />
+    <Compile Include="CustomControls\OrderCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\OrderCard.Designer.cs">
+      <DependentUpon>OrderCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\OrderProductCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\OrderProductCard.Designer.cs">
+      <DependentUpon>OrderProductCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomControls\ProductCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -123,6 +147,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Services\IdentityService.cs" />
+    <Compile Include="Services\CartService.cs" />
     <Compile Include="Services\ProductPriceService.cs" />
     <Compile Include="Services\UserExperienceService.cs" />
     <Compile Include="turchaninov_ae_marvelbootsDataSet.Designer.cs">
@@ -133,14 +158,26 @@
     <EmbeddedResource Include="AppForms\BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AppForms\OrderForm.resx">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AppForms\OrdersForm.resx">
       <DependentUpon>OrdersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppForms\DetailsForm.resx">
+      <DependentUpon>DetailsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AppForms\ProductsForm.resx">
       <DependentUpon>ProductsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AppForms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\OrderCard.resx">
+      <DependentUpon>OrderCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\OrderProductCard.resx">
+      <DependentUpon>OrderProductCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\ProductCard.resx">
       <DependentUpon>ProductCard.cs</DependentUpon>

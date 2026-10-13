@@ -21,11 +21,11 @@ namespace MarvelBoots.AppForms
             UserExperienceService.CustomizeControls(splitContainer.Panel1.Controls);
             UserExperienceService.CustomizeControls(splitContainer.Panel2.Controls);
 
-            labelFullName.Text = IdentityService.IsAuthorized
-                ? IdentityService.User.FullName + Environment.NewLine + IdentityService.User.UserRole.Name
-                : "Гость";
             LoadProducts();
             InitializeCategoryCombo();
+
+            buttonOrdersAccent.Visible = IdentityService.Is(Models.Enums.Role.Manager)
+                || IdentityService.Is(Models.Enums.Role.Admin);
         }
 
         private void InitializeCategoryCombo()
@@ -43,7 +43,7 @@ namespace MarvelBoots.AppForms
             flowLayoutPanel1.Controls.Clear();
             if (cache == null)
             {
-                cache = Program.Context.Product.ToList();
+                cache = Program.Context.ProductSize.Where(x => x.Stock > 0).Select(x => x.Product).Distinct().ToList();
             }
 
             Render(cache);
@@ -62,20 +62,18 @@ namespace MarvelBoots.AppForms
             toFilter = cache.Where(x => x.Name.ToLower().Contains(searchTerm.Text.ToLower())
                 || x.Description.ToLower().Contains(searchTerm.Text.ToLower())).AsQueryable();
 
-            if (comboBoxCategory.SelectedIndex != 0)
+            if (comboBoxCategory.SelectedIndex > 0)
             {
                 toFilter = toFilter.Where(x => x.Category.Name == comboBoxCategory.SelectedItem.ToString());
             }
 
-            switch (comboBoxSort.SelectedIndex)
+            if (radioButtonLessFirst.Checked)
             {
-                case 0:
-                    toFilter = toFilter.OrderBy(x => x.Price);
-                    break;
-
-                case 1:
-                    toFilter = toFilter.OrderByDescending(x => x.Price);
-                    break;
+                toFilter = toFilter.OrderBy(x => x.Price);
+            }
+            else if (radioButtonExpensiveFirst.Checked)
+            {
+                toFilter = toFilter.OrderByDescending(x => x.Price);
             }
 
             Render(toFilter.ToList());
@@ -86,6 +84,12 @@ namespace MarvelBoots.AppForms
             foreach (var product in products)
             {
                 var card = new ProductCard(product);
+                card.OnDetails += () =>
+                {
+                    var detailsForm = new DetailsForm(product);
+                    detailsForm.OrderProductCreated += (orderProduct) => CartService.AddOrderProduct(orderProduct);
+                    detailsForm.ShowDialog();
+                };
                 flowLayoutPanel1.Controls.Add(card);
             }
         }
@@ -99,7 +103,6 @@ namespace MarvelBoots.AppForms
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "turchaninov_ae_marvelbootsDataSet.Manufacturer". При необходимости она может быть перемещена или удалена.
             this.manufacturerTableAdapter.Fill(this.turchaninov_ae_marvelbootsDataSet.Manufacturer);
-
         }
 
         private void comboBoxManufacturer_SelectedIndexChanged(object sender, System.EventArgs e)
@@ -107,7 +110,12 @@ namespace MarvelBoots.AppForms
             Filter();
         }
 
-        private void comboBoxSort_SelectedIndexChanged(object sender, EventArgs e)
+        private void buttonOrdersAccent_Click(object sender, EventArgs e)
+        {
+            new OrdersForm().ShowDialog();
+        }
+
+        private void radioButtonFirst_CheckedChanged(object sender, EventArgs e)
         {
             Filter();
         }

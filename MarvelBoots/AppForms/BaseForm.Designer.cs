@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BaseForm));
             this.splitContainer = new System.Windows.Forms.SplitContainer();
+            this.buttonCartAccent = new System.Windows.Forms.Button();
+            this.labelFullName = new System.Windows.Forms.Label();
             this.buttonActionAccent = new System.Windows.Forms.Button();
             this.title = new System.Windows.Forms.Label();
             this.logo = new System.Windows.Forms.PictureBox();
@@ -51,6 +53,8 @@
             // splitContainer.Panel1
             // 
             this.splitContainer.Panel1.BackColor = System.Drawing.Color.White;
+            this.splitContainer.Panel1.Controls.Add(this.buttonCartAccent);
+            this.splitContainer.Panel1.Controls.Add(this.labelFullName);
             this.splitContainer.Panel1.Controls.Add(this.buttonActionAccent);
             this.splitContainer.Panel1.Controls.Add(this.title);
             this.splitContainer.Panel1.Controls.Add(this.logo);
@@ -61,6 +65,29 @@
             this.splitContainer.Size = new System.Drawing.Size(784, 461);
             this.splitContainer.SplitterDistance = 100;
             this.splitContainer.TabIndex = 0;
+            // 
+            // buttonCartAccent
+            // 
+            this.buttonCartAccent.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonCartAccent.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonCartAccent.BackgroundImage")));
+            this.buttonCartAccent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonCartAccent.Location = new System.Drawing.Point(727, 51);
+            this.buttonCartAccent.Name = "buttonCartAccent";
+            this.buttonCartAccent.Size = new System.Drawing.Size(45, 45);
+            this.buttonCartAccent.TabIndex = 7;
+            this.buttonCartAccent.UseVisualStyleBackColor = true;
+            this.buttonCartAccent.Click += new System.EventHandler(this.buttonCartAccent_Click);
+            // 
+            // labelFullName
+            // 
+            this.labelFullName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelFullName.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelFullName.Location = new System.Drawing.Point(550, 8);
+            this.labelFullName.Name = "labelFullName";
+            this.labelFullName.Size = new System.Drawing.Size(219, 34);
+            this.labelFullName.TabIndex = 6;
+            this.labelFullName.Text = "FullName";
+            this.labelFullName.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // buttonActionAccent
             // 
@@ -117,5 +144,7 @@
         protected System.Windows.Forms.Button buttonActionAccent;
         protected System.Windows.Forms.Label title;
         protected System.Windows.Forms.SplitContainer splitContainer;
+        protected System.Windows.Forms.Button buttonCartAccent;
+        protected System.Windows.Forms.Label labelFullName;
     }
 }

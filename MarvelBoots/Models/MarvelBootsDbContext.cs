@@ -1,7 +1,4 @@
-using System;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
-using System.Linq;
 
 namespace MarvelBoots.Models
 {
@@ -52,7 +49,7 @@ namespace MarvelBoots.Models
             modelBuilder.Entity<Order>()
                 .HasMany(e => e.OrderProduct)
                 .WithRequired(e => e.Order)
-                .HasForeignKey(e => e.OrderProductId);
+                .HasForeignKey(e => e.OrderId);
 
             modelBuilder.Entity<OrderProduct>()
                 .Property(e => e.Size)

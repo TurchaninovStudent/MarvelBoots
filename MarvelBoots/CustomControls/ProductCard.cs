@@ -22,7 +22,7 @@ namespace MarvelBoots.CustomControls
         /// <summary>
         /// Событие по добавлению в корзину
         /// </summary>
-        public Action OnCartAdd;
+        public Action OnDetails;
 
         public ProductCard(Product product)
         {
@@ -39,6 +39,7 @@ namespace MarvelBoots.CustomControls
             labelPrice.Text = $"Цена: {ProductPriceService.GetPrice(product):F2}";
             labelCategory.Text = "Категория: " + product.Category.Name;
             labelResources.Text = product.ProductResources;
+
             if (product.ImagePath != null)
             {
                 try
@@ -54,12 +55,13 @@ namespace MarvelBoots.CustomControls
 
         private void ProductCard_Paint(object sender, PaintEventArgs e)
         {
-            ControlPaint.DrawBorder(e.Graphics, ClientRectangle, ColorTranslator.FromHtml(AppColors.Accent), ButtonBorderStyle.Solid);
+            ControlPaint.DrawBorder(e.Graphics, ClientRectangle,
+                ColorTranslator.FromHtml(AppColors.Accent), ButtonBorderStyle.Solid);
         }
 
         private void buttonAddToCartAccent_Click(object sender, EventArgs e)
         {
-            OnCartAdd?.Invoke();
+            OnDetails?.Invoke();
         }
     }
 }

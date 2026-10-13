@@ -74,3 +74,7 @@ X:\Инструментальные средства разработки ПО\M
 X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\obj\Debug\MarvelBoots.AppForms.ProductForm.resources
 X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\obj\Debug\MarvelBoots.CustomControls.ProductCard.resources
 X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\obj\Debug\MarvelBoots.AppForms.OrdersForm.resources
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\obj\Debug\MarvelBoots.AppForms.DetailsForm.resources
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\obj\Debug\MarvelBoots.CustomControls.OrderProductCard.resources
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\obj\Debug\MarvelBoots.AppForms.OrderForm.resources
+X:\Инструментальные средства разработки ПО\MarvelBoots\MarvelBoots\obj\Debug\MarvelBoots.CustomControls.OrderCard.resources

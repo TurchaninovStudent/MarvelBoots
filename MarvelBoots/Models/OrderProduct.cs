@@ -1,18 +1,15 @@
 namespace MarvelBoots.Models
 {
-    using System;
-    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-    using System.Data.Entity.Spatial;
 
     [Table("OrderProduct")]
     public partial class OrderProduct
     {
         [Key]
-        public int IdOrder { get; set; }
+        public int IdOrderProduct { get; set; }
 
-        public int OrderProductId { get; set; }
+        public int OrderId { get; set; }
 
         public int CategoryId { get; set; }
 

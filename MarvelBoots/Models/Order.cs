@@ -4,7 +4,6 @@ namespace MarvelBoots.Models
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-    using System.Data.Entity.Spatial;
 
     [Table("Order")]
     public partial class Order
@@ -17,7 +16,7 @@ namespace MarvelBoots.Models
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public int IdOrderProduct { get; set; }
+        public int IdOrder { get; set; }
 
         [Column(TypeName = "date")]
         public DateTime Date { get; set; }

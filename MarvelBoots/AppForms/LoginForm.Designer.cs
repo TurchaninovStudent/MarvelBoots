@@ -46,7 +46,7 @@
             // 
             // title
             // 
-            this.title.Size = new System.Drawing.Size(129, 24);
+            this.title.Size = new System.Drawing.Size(113, 23);
             this.title.Text = "Авторизация";
             // 
             // splitContainer
@@ -56,6 +56,16 @@
             // 
             this.splitContainer.Panel2.Controls.Add(this.tableLayoutPanel1);
             this.splitContainer.Size = new System.Drawing.Size(743, 397);
+            // 
+            // buttonCartAccent
+            // 
+            this.buttonCartAccent.Location = new System.Drawing.Point(686, 51);
+            this.buttonCartAccent.Visible = false;
+            // 
+            // labelFullName
+            // 
+            this.labelFullName.Location = new System.Drawing.Point(509, 8);
+            this.labelFullName.Visible = false;
             // 
             // label1
             // 
