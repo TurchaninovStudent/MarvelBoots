@@ -30,15 +30,21 @@ namespace MarvelBoots.AppForms
             flowLayoutPanel1.Controls.Clear();
             if (cache == null)
             {
-                cache = Program.Context.Order.ToList();
+                cache = Program.Context.Order.OrderByDescending(x => x.Date).ToList();
             }
 
             Render(cache);
         }
 
-        private void buttonUnauthorize_Click(object sender, System.EventArgs e)
+        private void buttonUnauthorize_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void InvalidateCacheAndLoad()
+        {
+            cache = null;
+            LoadOrders();
         }
 
         private void Render(List<Order> orders)
@@ -48,13 +54,17 @@ namespace MarvelBoots.AppForms
                 var card = new OrderCard(order);
                 card.OnDetails += () =>
                 {
-                    var detailsForm = new OrderForm(order);
-                    detailsForm.ShowDialog();
+                    var orderForm = new OrderForm(order);
+                    orderForm.Changed += () =>
+                    {
+                        InvalidateCacheAndLoad();
+                    };
+                    orderForm.ShowDialog();
                 };
                 card.OnRemove += () =>
                 {
                     if (MessageBox.Show("Удалить заказ?", "Удаление заказа",
-               MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                        MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
                     {
                         return;
                     }
@@ -63,6 +73,9 @@ namespace MarvelBoots.AppForms
                     {
                         Program.Context.Order.Remove(order);
                         Program.Context.SaveChanges();
+                        MessageBox.Show("Заказ успешно удалён!", "Успех",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        InvalidateCacheAndLoad();
                     }
                     catch (Exception ex)
                     {

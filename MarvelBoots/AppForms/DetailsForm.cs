@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Windows.Forms;
 using MarvelBoots.Models;
 using MarvelBoots.Services;
 
@@ -80,6 +81,11 @@ namespace MarvelBoots.AppForms
             };
 
             OrderProductCreated?.Invoke(newOrder);
+
+            MessageBox.Show("Заказ успешно добавлен!", "Успех",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            Close();
         }
 
         private void listBoxAvaibleSizes_SelectedIndexChanged(object sender, EventArgs e)

@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrderForm));
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.buttonConfirmAccent = new System.Windows.Forms.Button();
+            this.buttonNewProductAccent = new System.Windows.Forms.Button();
+            this.dateTimePickerDate = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).BeginInit();
             this.splitContainer.Panel1.SuspendLayout();
             this.splitContainer.Panel2.SuspendLayout();
@@ -52,6 +54,8 @@
             // 
             // splitContainer.Panel1
             // 
+            this.splitContainer.Panel1.Controls.Add(this.dateTimePickerDate);
+            this.splitContainer.Panel1.Controls.Add(this.buttonNewProductAccent);
             this.splitContainer.Panel1.Controls.Add(this.buttonConfirmAccent);
             // 
             // splitContainer.Panel2
@@ -83,12 +87,31 @@
             this.buttonConfirmAccent.UseVisualStyleBackColor = true;
             this.buttonConfirmAccent.Click += new System.EventHandler(this.buttonConfirmAccent_Click);
             // 
-            // CartForm
+            // buttonNewProductAccent
+            // 
+            this.buttonNewProductAccent.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonNewProductAccent.Location = new System.Drawing.Point(235, 63);
+            this.buttonNewProductAccent.Name = "buttonNewProductAccent";
+            this.buttonNewProductAccent.Size = new System.Drawing.Size(119, 23);
+            this.buttonNewProductAccent.TabIndex = 9;
+            this.buttonNewProductAccent.Text = "Добавить заказ";
+            this.buttonNewProductAccent.UseVisualStyleBackColor = true;
+            this.buttonNewProductAccent.Click += new System.EventHandler(this.buttonNewProductAccent_Click);
+            // 
+            // dateTimePickerDate
+            // 
+            this.dateTimePickerDate.Location = new System.Drawing.Point(236, 37);
+            this.dateTimePickerDate.Name = "dateTimePickerDate";
+            this.dateTimePickerDate.Size = new System.Drawing.Size(118, 20);
+            this.dateTimePickerDate.TabIndex = 10;
+            this.dateTimePickerDate.ValueChanged += new System.EventHandler(this.dateTimePickerDate_ValueChanged);
+            // 
+            // OrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 461);
-            this.Name = "CartForm";
+            this.Name = "OrderForm";
             this.Text = "LoginForm";
             this.splitContainer.Panel1.ResumeLayout(false);
             this.splitContainer.Panel1.PerformLayout();
@@ -102,5 +125,7 @@
         #endregion
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button buttonConfirmAccent;
+        private System.Windows.Forms.Button buttonNewProductAccent;
+        private System.Windows.Forms.DateTimePicker dateTimePickerDate;
     }
 }

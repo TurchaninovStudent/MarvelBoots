@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using MarvelBoots.Models;
 
@@ -34,26 +35,45 @@ namespace MarvelBoots.Services
         /// </summary>
         public static void CreateOrder()
         {
-            var order = new Order();
-
-            foreach (var item in Cart)
+            var order = new Order
             {
-                item.OrderId = order.IdOrder;
-            }
-
-            order.OrderProduct = Cart;
-
-            foreach (var item in Cart)
-            {
-                foreach (var dbProduct in Program.Context.Product)
+                Date = DateTime.Now,
+                UserId = IdentityService.User.IdUser,
+                OrderProduct = Cart.Select(item => new OrderProduct
                 {
-                    foreach (var size in dbProduct.ProductSize.Where(x => x.Stock == item.Size))
+                    ProductId = item.ProductId,
+                    CategoryId = item.CategoryId,
+                    ManufacturerId = item.ManufacturerId,
+                    Amount = item.Amount,
+                    Size = item.Size,
+                    PricePerUnit = item.PricePerUnit
+                }).ToList()
+            };
+
+            var productIdsInCart = Cart.Select(x => x.ProductId).Distinct().ToList();
+
+            var dbProducts = Program.Context.Product
+                .Where(p => productIdsInCart.Contains(p.IdProduct))
+                .ToList();
+
+            foreach (var cartItem in Cart)
+            {
+                var dbProduct = dbProducts.FirstOrDefault(p => p.IdProduct == cartItem.ProductId);
+                if (dbProduct != null)
+                {
+                    var targetSize = dbProduct.ProductSize.FirstOrDefault(x => x.Size == cartItem.Size);
+
+                    if (targetSize != null)
                     {
-                        size.Stock -= item.Amount;
+                        if (targetSize.Stock < cartItem.Amount)
+                            throw new Exception($"Недостаточно товара с размером {cartItem.Size} на складе!");
+
+                        targetSize.Stock -= cartItem.Amount;
                     }
                 }
             }
 
+            Cart.Clear();
             Program.Context.Order.Add(order);
             Program.Context.SaveChanges();
         }

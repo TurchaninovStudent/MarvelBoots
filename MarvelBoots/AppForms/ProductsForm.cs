@@ -12,9 +12,23 @@ namespace MarvelBoots.AppForms
     /// </summary>
     public partial class ProductForm : BaseForm
     {
+        private Order forOrder;
         private List<Product> cache;
 
+        public Action<OrderProduct> ProductAdded;
+
+        public ProductForm(Order order)
+        {
+            forOrder = order;
+            Initialize();
+        }
+
         public ProductForm()
+        {
+            Initialize();
+        }
+
+        private void Initialize()
         {
             InitializeComponent();
             UserExperienceService.SetTitle("Список товаров", this);
@@ -26,6 +40,10 @@ namespace MarvelBoots.AppForms
 
             buttonOrdersAccent.Visible = IdentityService.Is(Models.Enums.Role.Manager)
                 || IdentityService.Is(Models.Enums.Role.Admin);
+
+            splitContainerFilter.Panel1Collapsed = IdentityService.Is(Models.Enums.Role.Guest);
+
+            buttonCartAccent.Visible = !IdentityService.Is(Models.Enums.Role.Guest);
         }
 
         private void InitializeCategoryCombo()
@@ -87,7 +105,17 @@ namespace MarvelBoots.AppForms
                 card.OnDetails += () =>
                 {
                     var detailsForm = new DetailsForm(product);
-                    detailsForm.OrderProductCreated += (orderProduct) => CartService.AddOrderProduct(orderProduct);
+                    detailsForm.OrderProductCreated += (orderProduct) =>
+                    {
+                        if (forOrder != null)
+                        {
+                            ProductAdded.Invoke(orderProduct);
+                        }
+                        else
+                        {
+                            CartService.AddOrderProduct(orderProduct);
+                        }
+                    };
                     detailsForm.ShowDialog();
                 };
                 flowLayoutPanel1.Controls.Add(card);

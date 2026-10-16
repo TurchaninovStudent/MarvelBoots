@@ -32,6 +32,7 @@ namespace MarvelBoots.CustomControls
             labelManufacturerAndName.Text = $"{product.Manufacturer.Name} | {product.Name}";
             labelPrice.Text = $"Цена: {ProductPriceService.GetPrice(product):F2}";
             labelCategory.Text = "Категория: " + product.Category.Name;
+            buttonRemoveAccent.Visible = orderProduct.OrderId == 0 || (orderProduct.OrderId != 0 && IdentityService.Is(Models.Enums.Role.Admin));
             if (product.ImagePath != null)
             {
                 try
